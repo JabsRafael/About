@@ -1,0 +1,85 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+#matrixCanvas {
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+
+.json-link {
+  color: #0F0; /* ou qualquer cor que você deseja para os links */
+  text-decoration: none; /* remove o sublinhado dos links */
+}
+
+.json-link:hover {
+  text-decoration: underline; /* adiciona sublinhado ao passar o mouse */
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 5px; /* Espaçamento pequeno do último caractere */
+  background-color: #0F0;
+  width: 10px; /* Largura do cursor */
+  animation: blink 1s step-start infinite;
+}
+
+
+.info-container {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: #0F0; /* Cor verde, estilo Matrix */
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  text-align: left;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px;
+  padding-left: 0px;
+  border-radius: 12px;
+  white-space: pre-wrap; /* Mantém o espaçamento como no elemento <pre> */
+  overflow: auto;
+  max-height: 80%;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombra leve para destacar */
+  z-index: 5;
+  font-size: 16px; /* ou o tamanho que preferir */
+  line-height: 1.5;
+}
+
+/* Se você quiser que as chaves e strings do JSON tenham cores diferentes */
+.info-container .key {
+  color: #9c87fc; /* Cor alternativa para chaves */
+}
+
+.info-container .string {
+  color: rgb(25, 0, 255); /* Cor alternativa para strings */
+}
