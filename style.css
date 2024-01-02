@@ -89,15 +89,14 @@ body, html {
   max-height: none;
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombra leve para destacar */
   z-index: 5;
-  font-size: 16px; /* ou o tamanho que preferir */
+  font-size: 16px; 
   line-height: 1.5;
 }
 
-/* Se você quiser que as chaves e strings do JSON tenham cores diferentes */
 .info-container .key {
-  color: #9c87fc; /* Cor alternativa para chaves */
+  color: #0f0; /* Cor alternativa para chaves */
 }
 
 .info-container .string {
-  color: rgb(25, 0, 255); /* Cor alternativa para strings */
+  color: #0f0; /* Cor alternativa para strings */
 }
