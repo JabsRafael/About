@@ -4,32 +4,68 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Jabison Rafael de Aguiar Bezerra</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <canvas class="IDECanvas"></canvas>
-    <pre id="jsonResume" class="info-container hidden">
-{
-    <span class="key">"name"</span> <span class="doubledot">:</span> <span class="value">"Jabison Rafael de Aguiar Bezerra"</span><span>,</span>
-    "description": "Estudante de Engenharia Nuclear e Engenharia de Computação",
-    "cv": "<a href='files/Jabison-Rafael_CV.pdf' download='Jabison-Rafael_CV.pdf' class='json-link'>cv.pdf</a>",
-    "address": [
-        "Universidade de São Paulo",
-        "Escola Politécnica",
-        "Av. Prof. Luciano Gualberto, 380",
-    ],
-    "contact": {
-        "phone": "<a href="https://wa.me/5581992264839" target="_blank" class="json-link">+55 81 99226-4839</a>",
-        "email": "<a href='mailto:contato@jabsrafael.com.br' class='json-link'>contato@jabsrafael.com.br</a>"
-    },
-    "profiles": [
-        "<a href='https://www.facebook.com/jabsrafael' target='_blank' class='json-link'>facebook</a>",
-        "<a href='https://instagram.com/jabs.rafael' target='_blank' class='json-link'>instagram</a>",
-        "<a href='https://www.linkedin.com/in/jabison-rafael/' target='_blank' class='json-link'>linkedin</a>",
-        "<a href='https://github.com/JabsRafael' target='_blank' class='json-link'>github</a>"
-    ]
-}<span class="cursor"> </span>
-    </pre>
-    <script src="script.js"></script>
+<div class="ide-container">
+    <div class="selection"></div>
+    <div class="sidebar">
+    <p><img src="files/images/icons8-seta-para-expandir-500.png" alt="" class="dropdown-arrow">&nbsp;/</p>
+    <p>&nbsp;&nbsp;<img src="files/images/icons8-seta-para-expandir-500.png" alt="" class="dropdown-arrow">&nbsp;usr</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;<img src="files/images/icons8-seta-para-expandir-500.png" alt="" class="dropdown-arrow">&nbsp;bin</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="files/images/icons8-seta-para-expandir-500.png" alt="" class="dropdown-arrow">&nbsp;home</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="files/images/icons8-seta-para-expandir-500.png" alt="" class="dropdown-arrow">&nbsp;jabs</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;about.json</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cv.pdf</p>
+    </div>
+    <div class="main-panel">
+        <div class="line-numbers">
+            <span>1</span><br>
+            <span>2</span><br>
+            <span>3</span><br>
+            <span>4</span><br>
+            <span>5</span><br>
+            <span>6</span><br>
+            <span>7</span><br>
+            <span>8</span><br>
+            <span>9</span><br>
+            <span>10</span><br>
+            <span>11</span><br>
+            <span>12</span><br>
+            <span>13</span><br>
+            <span>14</span><br>
+            <span>15</span><br>
+            <span>16</span><br>
+            <span>17</span><br>
+            <span>18</span><br>
+            <span>19</span><br>
+            <span class="selected-line">20</span><br>
+            <span>21</span><br>
+          </div>
+          <div class="code-content">
+            <p><span class="key">{</span></p>
+            <p><span class="key">&nbsp;&nbsp;&nbsp;"name"</span><span class="doubledot">:</span><span class="value">"Jabison Rafael de Aguiar Bezerra"</span><span>,</span></p>
+            <p><span class="key">&nbsp;&nbsp;&nbsp;"description"</span><span class="doubledot">:</span> <span class="value">"Estudante de Engenharia Nuclear e Engenharia de Computação"</span>,</p>
+            <p><span class="key">&nbsp;&nbsp;&nbsp;"cv"</span><span class="doubledot">:</span>"<a href='files/Jabison-Rafael_CV.pdf' download='Jabison-Rafael_CV.pdf' class='json-link'>cv.pdf</a>",</p>
+            <p><span class="key">&nbsp;&nbsp;&nbsp;"address"</span><span class="doubledot">:</span> <span class="key">[</span></p>
+            <p><span class="value">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Universidade de São Paulo"</span>,</p>
+            <p><span class="value">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Escola Politécnica"</span>,</p>
+            <p><span class="value">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Av. Prof. Luciano Gualberto, 380"</span>,</p>
+            <p><span class="key">&nbsp;&nbsp;&nbsp;]</span>,</p>
+            <p><span class="key">&nbsp;&nbsp;&nbsp;"contact"</span><span class="doubledot">:</span> <span class="key">{</span></p>
+            <p><span class="key">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"phone"</span><span class="doubledot">:</span> "<a href="https://wa.me/5581992264839" target="_blank" class="json-link">+55 81 99226-4839</a>",</p>
+            <p><span class="key">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"email"</span><span class="doubledot">:</span> "<a href='mailto:contato@jabsrafael.com.br' class='json-link'>contato@jabsrafael.com.br</a>",</p>
+            <p><span class="key">&nbsp;&nbsp;&nbsp;}</span>,</p>
+            <p><span class="key">&nbsp;&nbsp;&nbsp;"profiles"</span><span class="doubledot">:</span> <span class="key">[</span></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"<a href='https://www.facebook.com/jabsrafael' target='_blank' class='json-link'>facebook</a>",</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"<a href='https://instagram.com/jabs.rafael' target='_blank' class='json-link'>instagram</a>",</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"<a href='https://www.linkedin.com/in/jabison-rafael/' target='_blank' class='json-link'>linkedin</a>",</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"<a href='https://github.com/JabsRafael' target='_blank' class='json-link'>github</a>"</p>
+            <p>&nbsp;&nbsp;&nbsp;<span class="key">]</span></p>
+            <p><span class="key">}</span></p>
+            <div class="code-selection"></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
