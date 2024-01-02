@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Fingerprint</title>
+    <link rel="stylesheet" href="style-cf.css">
+</head>
+<body>
+    <h1>Primeiro, iremos gerar nosso fingerprint usando o Canvas do HTML5</h1>
+    <button id="generateFingerprint">Gerar Fingerprint</button>
+    <p id="fingerprint"></p>
+    <script src="script-cf.js"></script>
+    <h2>Se quisermos, podemos adicionar dados do dispositivo usado no fingerprint</h2>
+    <button id="deviceDetails">Obter Detalhes do Dispositivo</button>
+    <p id="deviceInfo"></p>
+    <h2>Finally, podemos gerar o hash do dispositivo, que diferencia não somente o modo de processamento que é quase único, como também adiciona detalhes do dispositivo</h2>
+    <button id="hash">Gerar Hash completo</button>
+    <p id="hashcompleto"></p>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</html>
