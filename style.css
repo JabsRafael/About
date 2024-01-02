@@ -52,23 +52,41 @@ body, html {
   animation: blink 1s step-start infinite;
 }
 
+@media (min-width: 1024px) {
+  .info-container {
+    width: auto; /* A largura será a do conteúdo, mas não mais que 30% */
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .info-container {
+    width: 70%; /* Aumenta a largura em telas menores */
+  }
+}
+
+@media (max-width: 767px) {
+  .info-container {
+    width: 90%; /* Aumenta ainda mais a largura em telas muito pequenas */
+  }
+}
 
 .info-container {
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   color: #0F0; /* Cor verde, estilo Matrix */
   background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
   text-align: left;
   font-family: 'Roboto Mono', monospace;
+  min-width: 30%;
   padding: 10px;
-  padding-left: 0px;
+  padding-left: 10px;
   border-radius: 12px;
   white-space: pre-wrap; /* Mantém o espaçamento como no elemento <pre> */
   overflow: auto;
-  max-height: 80%;
-  width: 30%;
+  max-height: none;
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Sombra leve para destacar */
   z-index: 5;
   font-size: 16px; /* ou o tamanho que preferir */

@@ -50,6 +50,7 @@ function showInfoContainer() {
     infoContainer.classList.add('visible');
   }
 
+
 setInterval(draw, 30);
 setTimeout(enableBlur, 2000);
 setTimeout(showInfoContainer, 2000);
