@@ -5,8 +5,8 @@ body, html {
   }
   
   
-  #matrixCanvas {
-    background-color: black;
+  #IDECanvas {
+    background-color: #282a36;
     display: block;
     position: absolute;
     top: 0;
@@ -36,7 +36,7 @@ body, html {
   }
   
   .json-link {
-    color: #0F0; /* ou qualquer cor que você deseja para os links */
+    color: #f1fa8c; /* ou qualquer cor que você deseja para os links */
     text-decoration: none; /* remove o sublinhado dos links */
   }
   
@@ -76,8 +76,8 @@ body, html {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    color: #0F0; /* Cor verde, estilo Matrix */
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    color: #f8f8f2; /* Cor do texto */
+    background-color: #282a36; /* Fundo semi-transparente */
     text-align: left;
     font-family: 'Roboto Mono', monospace;
     min-width: 30%;
@@ -92,11 +92,26 @@ body, html {
     font-size: 16px; 
     line-height: 1.5;
   }
-  
-  .info-container .key {
-    color: #0f0; /* Cor alternativa para chaves */
+
+  .line-highlight {
+    position: absolute;
+    width: 100%;
+    height: 1em; /* Altura da linha de texto */
+    top: 0; /* Posição inicial, você vai ajustar isso com JavaScript */
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1); /* Realce suave */
+    pointer-events: none; /* Isso permite clicar em elementos 'abaixo' do realce */
+  }
+
+  .key {
+    color: #8be9fd; /* Cor para chaves JSON, como um azul claro */
+    font-weight: bold; /* Deixa as chaves em negrito */
   }
   
-  .info-container .string {
-    color: #0f0; /* Cor alternativa para strings */
+  .value {
+    color: #f1fa8c; /* Cor para valores JSON, como um verde claro */
+  }
+
+  .doubledot {
+    color: #ff79c6; /* Cor para os dois pontos, como um rosa claro */
   }
